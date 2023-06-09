@@ -3,14 +3,14 @@ import DataContext from "../context/DataContext";
 
 export default function SearchForm() {
   const { searchText, setSearchText, setWeatherData } = useContext(DataContext);
+  const apiKey = process.env.REACT_APP_API_KEY;
 
   const fetchData = async (url) => {
     try {
       const options = {
         method: "GET",
         headers: {
-          "X-RapidAPI-Key":
-            "fa00667e24msh9bbb60643e8501dp104495jsn0bd22dbfbd3a",
+          "X-RapidAPI-Key": apiKey,
           "X-RapidAPI-Host": "open-weather13.p.rapidapi.com",
         },
       };

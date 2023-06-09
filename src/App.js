@@ -1,6 +1,6 @@
-import './index.css';
-import SearchForm from './components/SearchForm';
-import WeatherInfo from './components/WeatherInfo';
+import "./index.css";
+import SearchForm from "./components/SearchForm";
+import WeatherInfo from "./components/WeatherInfo";
 
 function App() {
   return (
